@@ -27,12 +27,12 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative aspect-square max-w-md mx-auto"
+          className="relative aspect-square max-w-md min-h-52 mx-auto"
         >
           <div className="absolute inset-0 border-2 border-primary rounded-lg transform translate-x-4 translate-y-4"></div>
           <div className="absolute inset-0 bg-muted rounded-lg overflow-hidden">
             <img
-              src="/placeholder.svg?height=400&width=400"
+              src="/pfp.jpeg"
               alt="Developer working on code"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -46,7 +46,7 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h3 className="text-2xl font-bold mb-4">
-            Hi, I'm <span className="text-primary">Your Name</span>
+            Hi, I'm <span className="text-primary">Camilo José Rueda Tello</span>
           </h3>
           <p className="text-muted-foreground mb-4">
             I'm a passionate full stack developer with over 5 years of experience building web applications that deliver
