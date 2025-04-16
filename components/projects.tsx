@@ -14,7 +14,7 @@ const projects = [
     title: "Express It",
     description:
       "Blog application for allowing bloggers to express their ideas and connect with like-minded people.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/expressit_smaller.png",
     tags: ["React", "JavaScript", "Express.js", "MongoDB"],
     repoUrl: "https://github.com/CamiloTello002/Express-It",
     longDescription:
@@ -23,13 +23,13 @@ const projects = [
   {
     id: 2,
     title: "Talent Trade",
-    description: "A collaborative task management application with real-time updates and team workspaces.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
+    description: "A platform for exchanging knowledge and skills between people.",
+    image: "/talent-trade.png",
+    tags: ["Next.js", "Express.js", "MongoDB", "TypeScript"],
+    liveUrl: "https://talent-trade.vercel.app/",
+    repoUrl: "https://github.com/CamiloTello002/Talent-Trade",
     longDescription:
-      "This task management application helps teams organize and track their work efficiently. It includes features like task creation and assignment, due dates, priority levels, comments, file attachments, and real-time notifications. The app supports multiple workspaces for different teams or projects, with customizable workflows and permission settings. Built with React for the frontend, Node.js and Express for the backend, MongoDB for data storage, and Socket.io for real-time updates.",
+      "Talent Trade is a platform for exchanging knowledge and skills between people. It connects those who want to learn something new with those willing to share their expertise. Users can create detailed profiles with contact information, photo, specialty, and a brief personal description, facilitating connections between people with complementary interests.",
   },
 ]
 
@@ -70,7 +70,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+            className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
           >
             <div className="relative aspect-video overflow-hidden">
               <img
@@ -87,9 +87,9 @@ export default function Projects() {
                 <Maximize className="h-4 w-4" />
               </button>
             </div>
-            <div className="p-5">
+            <div className="p-5 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+              <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.slice(0, 3).map((tag) => (
                   <Badge key={tag} variant="secondary">
