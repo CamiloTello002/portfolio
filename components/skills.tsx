@@ -13,27 +13,17 @@ const skills = [
   {
     category: "Backend",
     icon: <Server className="h-6 w-6" />,
-    items: ["Node.js", "Express", "NestJS", "Python", "Django", "REST APIs"],
+    items: ["Node.js", "Express", "NestJS", "REST APIs"],
   },
   {
     category: "Database",
     icon: <Database className="h-6 w-6" />,
-    items: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Prisma", "Supabase"],
+    items: ["MongoDB", "PostgreSQL", "Prisma", "Supabase"],
   },
   {
     category: "DevOps",
     icon: <Terminal className="h-6 w-6" />,
-    items: ["Git", "Docker", "CI/CD", "AWS", "Vercel", "Netlify"],
-  },
-  {
-    category: "Mobile",
-    icon: <Smartphone className="h-6 w-6" />,
-    items: ["React Native", "Flutter", "Responsive Design", "PWAs"],
-  },
-  {
-    category: "Other",
-    icon: <Code className="h-6 w-6" />,
-    items: ["GraphQL", "WebSockets", "Testing", "Accessibility", "SEO", "Performance"],
+    items: ["Git", "GitHub", "Docker", "CI/CD", "AWS", "Vercel"],
   },
 ]
 
