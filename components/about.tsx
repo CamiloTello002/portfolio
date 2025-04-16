@@ -27,7 +27,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative aspect-square max-w-md min-h-52 mx-auto"
+          className="relative aspect-square max-w-md min-h-64 mx-auto"
         >
           <div className="absolute inset-0 border-2 border-primary rounded-lg transform translate-x-4 translate-y-4"></div>
           <div className="absolute inset-0 bg-muted rounded-lg overflow-hidden">
@@ -49,8 +49,7 @@ export default function About() {
             Hi, I'm <span className="text-primary">Camilo José Rueda Tello</span>
           </h3>
           <p className="text-muted-foreground mb-4">
-            I'm a passionate full stack developer with over 5 years of experience building web applications that deliver
-            exceptional user experiences.
+            I'm a full stack developer based in Colombia.
           </p>
           <p className="text-muted-foreground mb-4">
             My approach combines technical expertise with a deep understanding of user needs. I believe in writing
@@ -64,15 +63,11 @@ export default function About() {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <h4 className="font-medium">Location</h4>
-              <p className="text-muted-foreground">San Francisco, CA</p>
-            </div>
-            <div>
-              <h4 className="font-medium">Experience</h4>
-              <p className="text-muted-foreground">5+ Years</p>
+              <p className="text-muted-foreground">Bucaramanga, Colombia</p>
             </div>
             <div>
               <h4 className="font-medium">Email</h4>
-              <p className="text-muted-foreground">hello@example.com</p>
+              <p className="text-muted-foreground">camilojtello5@gmail.com</p>
             </div>
             <div>
               <h4 className="font-medium">Availability</h4>
