@@ -11,19 +11,18 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Express It",
     description:
-      "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+      "Blog application for allowing bloggers to express their ideas and connect with like-minded people.",
     image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Prisma"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
+    tags: ["React", "JavaScript", "Express.js", "MongoDB"],
+    repoUrl: "https://github.com/CamiloTello002/Express-It",
     longDescription:
-      "This e-commerce platform provides businesses with a complete solution for selling products online. It features a responsive design, product search and filtering, user authentication, shopping cart, checkout process with Stripe integration, and an admin dashboard for managing products and orders. The application is built with Next.js for server-side rendering and optimal performance, TypeScript for type safety, and Prisma for database management.",
+      "Express It is a web application built on top of the MERN stack. It has features such as creating your own account and adding images to your account.",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Talent Trade",
     description: "A collaborative task management application with real-time updates and team workspaces.",
     image: "/placeholder.svg?height=600&width=800",
     tags: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
@@ -31,50 +30,6 @@ const projects = [
     repoUrl: "https://github.com",
     longDescription:
       "This task management application helps teams organize and track their work efficiently. It includes features like task creation and assignment, due dates, priority levels, comments, file attachments, and real-time notifications. The app supports multiple workspaces for different teams or projects, with customizable workflows and permission settings. Built with React for the frontend, Node.js and Express for the backend, MongoDB for data storage, and Socket.io for real-time updates.",
-  },
-  {
-    id: 3,
-    title: "Health & Fitness Tracker",
-    description: "A mobile-responsive application for tracking workouts, nutrition, and health metrics.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React Native", "Firebase", "Redux", "Chart.js", "REST API"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
-    longDescription:
-      "This health and fitness tracker helps users monitor their physical activity, nutrition, and health metrics. It includes workout logging with exercise library, meal tracking with nutritional information, weight and body measurement tracking, goal setting, and progress visualization with charts and graphs. The app also provides personalized recommendations based on user data and integrates with popular fitness devices. Built with React Native for cross-platform compatibility, Firebase for backend services, and Redux for state management.",
-  },
-  {
-    id: 4,
-    title: "Content Management System",
-    description: "A headless CMS with a user-friendly interface for managing digital content across platforms.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Vue.js", "GraphQL", "PostgreSQL", "Docker", "AWS"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
-    longDescription:
-      "This headless CMS provides a flexible solution for managing digital content across multiple platforms. It features content modeling with custom fields, media management, versioning and publishing workflows, user roles and permissions, and a GraphQL API for content delivery. The system supports multilingual content, scheduled publishing, and content previews. Built with Vue.js for the admin interface, GraphQL for the API, PostgreSQL for data storage, and containerized with Docker for easy deployment on AWS.",
-  },
-  {
-    id: 5,
-    title: "Real Estate Marketplace",
-    description: "A platform connecting property buyers, sellers, and agents with advanced search and filtering.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "Django", "PostgreSQL", "Google Maps API", "AWS S3"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
-    longDescription:
-      "This real estate marketplace connects property buyers, sellers, and agents in a user-friendly platform. It features property listings with detailed information and media galleries, advanced search and filtering options, map-based property exploration, saved searches and favorites, agent profiles and messaging, and property alerts. The platform includes virtual tours, mortgage calculators, and neighborhood information. Built with Next.js for the frontend, Django for the backend, PostgreSQL for data storage, Google Maps API for location features, and AWS S3 for media storage.",
-  },
-  {
-    id: 6,
-    title: "Learning Management System",
-    description: "An educational platform with course creation, student management, and interactive learning features.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "WebRTC", "AWS"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com",
-    longDescription:
-      "This learning management system provides educational institutions and content creators with tools for delivering online courses. It includes course creation and management, student enrollment and progress tracking, interactive content with quizzes and assignments, discussion forums, video conferencing for live classes, and certificate generation. The platform supports different content formats, grading systems, and learning paths. Built with React for the frontend, Node.js for the backend, MongoDB for data storage, WebRTC for video conferencing, and various AWS services for scalability.",
   },
 ]
 
@@ -149,11 +104,14 @@ export default function Projects() {
                     <Github className="h-4 w-4 mr-1" /> Code
                   </a>
                 </Button>
-                <Button size="sm" asChild>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-1" /> Demo
-                  </a>
-                </Button>
+                {project.liveUrl && (
+
+                  <Button size="sm" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-1" /> Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           </motion.div>
@@ -162,7 +120,7 @@ export default function Projects() {
 
       {selectedProject && (
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <DialogContent className="max-w-3xl">
+          <DialogContent className="lg:max-w-screen-lg overflow-y-scroll max-h-[90vh]">
             <DialogHeader>
               <DialogTitle>{selectedProject.title}</DialogTitle>
               <DialogDescription>{selectedProject.description}</DialogDescription>
