@@ -67,9 +67,12 @@ export default function Home() {
           <Projects />
         </section>
 
+        {/*
+
         <section id="blog" className="py-20">
           <BlogPreview />
         </section>
+        */}
 
         <section id="contact" className="py-20">
           <Contact />
@@ -79,7 +82,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 border-t border-border">
         <div className="container px-4 mx-auto text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} DevPortfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Camilo Rueda Tello.</p>
           <p className="mt-2 text-sm">Built with Next.js, Tailwind CSS, and shadcn/ui</p>
         </div>
       </footer>
