@@ -6,6 +6,7 @@ import Projects from "@/components/projects"
 import Contact from "@/components/contact"
 import BlogPreview from "@/components/blog-preview"
 import ThemeToggle from "@/components/theme-toggle"
+import Experience from "@/components/experience"
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
             <span className="text-primary">Camilo Tello</span>
           </div>
           <ul className="hidden md:flex items-center space-x-8">
-            {["Home", "About", "Skills", "Projects", "Blog", "Contact"].map((item) => (
+            {["Home", "About", "Skills", "Experience", "Projects", "Blog", "Contact"].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
@@ -61,6 +62,10 @@ export default function Home() {
 
         <section id="skills" className="py-20">
           <Skills />
+        </section>
+
+        <section id="experience" className="py-20">
+          <Experience />
         </section>
 
         <section id="projects" className="py-20">
