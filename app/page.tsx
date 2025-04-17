@@ -7,12 +7,13 @@ import Contact from "@/components/contact"
 import BlogPreview from "@/components/blog-preview"
 import ThemeToggle from "@/components/theme-toggle"
 import Experience from "@/components/experience"
+import MobileNav from "@/components/mobile-nav"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Fixed header with theme toggle */}
-      <div className="fixed top-4 right-4 z-50 md:hidden">
+      <div className="fixed top-4 right-4 z-50 hidden md:block">
         <ThemeToggle />
       </div>
 
@@ -37,6 +38,7 @@ export default function Home() {
               <ThemeToggle />
             </li>
           </ul>
+          <MobileNav />
         </div>
       </nav>
 
