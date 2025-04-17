@@ -12,8 +12,6 @@ const experiences = [
     company: "Mintec Digital",
     position: "Full stack developer",
     period: "Aug 2024 - Mar 2025",
-    description:
-      "Lead developer for the company's flagship SaaS platform. Architected and implemented new features, improved performance, and mentored junior developers.",
     achievements: [
       "Optimized frontend performance with React Server Components for better SEO and faster page loads.",
       "Designed and implemented loading states and error UIs to enhance UX and improve user feedback",
@@ -71,8 +69,6 @@ export default function Experience() {
                   <span>{exp.period}</span>
                 </div>
               </div>
-
-              <p className="text-muted-foreground mb-4">{exp.description}</p>
 
               <h4 className="font-semibold mb-2">Key Achievements:</h4>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
