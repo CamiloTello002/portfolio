@@ -12,10 +12,6 @@ import MobileNav from "@/components/mobile-nav"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Fixed header with theme toggle */}
-      <div className="fixed top-4 right-4 z-50 hidden md:block">
-        <ThemeToggle />
-      </div>
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full bg-background/80 backdrop-blur-sm z-40 border-b border-border">
