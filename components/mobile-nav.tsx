@@ -5,14 +5,12 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import { useTheme } from "next-themes"
 import ThemeToggle from "./theme-toggle"
 
 const navItems = ["Home", "About", "Skills", "Experience", "Projects", "Blog", "Contact"]
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   // Prevent hydration mismatch
