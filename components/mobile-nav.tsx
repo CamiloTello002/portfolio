@@ -128,7 +128,7 @@ export default function MobileNav() {
                 </nav>
 
                 <div className="mt-auto pt-6 border-t border-border">
-                  <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} DevPortfolio</p>
+                  <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Camilo Tello</p>
                 </div>
               </div>
             </motion.div>
