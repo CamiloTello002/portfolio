@@ -77,9 +77,11 @@ export default function Home() {
         </section>
         */}
 
+        {/*
         <section id="contact" className="py-20">
           <Contact />
         </section>
+        */}
       </div>
 
       {/* Footer */}
