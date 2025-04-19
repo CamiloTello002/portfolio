@@ -48,17 +48,9 @@ export default function About() {
           <h3 className="text-2xl font-bold mb-4">
             Hi, I'm <span className="text-primary">Camilo José Rueda Tello</span>
           </h3>
-          <p className="text-muted-foreground mb-4">
-            I'm a full stack developer based in Colombia.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            My approach combines technical expertise with a deep understanding of user needs. I believe in writing
-            clean, maintainable code and creating intuitive interfaces that make technology accessible to everyone.
-          </p>
-          <p className="text-muted-foreground mb-6">
-            When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or
-            sharing my knowledge through my technical blog.
-          </p>
+          <p className="text-muted-foreground mb-4">Hey! I'm a full stack developer based in Colombia, working across both frontend and backend to bring ideas to life. I care deeply about crafting smooth, intuitive user experiences and writing clean, maintainable code that lasts.</p>
+          <p className="text-muted-foreground mb-4">I'm big on collaboration — I enjoy working closely with teams to turn complex problems into simple, usable solutions. My projects always aim to bridge the gap between solid engineering and thoughtful design.</p>
+          <p className="text-muted-foreground mb-6">When I’m not coding, you’ll probably find me out on a run or getting lost in a music rabbit hole. I'm currently open to full-time remote opportunities — feel free to reach out if you’d like to build something cool together.</p>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
