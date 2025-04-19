@@ -93,10 +93,10 @@ export default function MobileNav() {
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className="fixed top-0 right-0 h-full w-3/4 max-w-sm bg-background border-l border-border z-50 md:hidden"
             >
-              <div className="flex flex-col min-h-screen p-6 bg-background">
+              <div className="flex flex-col min-h-screen p-6 bg-background border-border border-l">
                 <div className="flex justify-between items-center mb-8">
                   <div className="font-bold text-xl">
-                    <span className="text-primary">Dev</span>Portfolio
+                    <span className="text-primary">Camilo Tello</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <ThemeToggle />
