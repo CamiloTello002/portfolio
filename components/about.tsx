@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
+import "./../styles/about.css"
+
 export default function About() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -52,7 +54,7 @@ export default function About() {
           <p className="text-muted-foreground mb-4">I'm big on collaboration — I enjoy working closely with teams to turn complex problems into simple, usable solutions. My projects always aim to bridge the gap between solid engineering and thoughtful design.</p>
           <p className="text-muted-foreground mb-6">When I’m not coding, you’ll probably find me out on a run or getting lost in a music rabbit hole. I'm currently open to full-time remote opportunities — feel free to reach out if you’d like to build something cool together.</p>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 info-grid">
             <div>
               <h4 className="font-medium">Location</h4>
               <p className="text-muted-foreground">Bucaramanga, Colombia</p>
