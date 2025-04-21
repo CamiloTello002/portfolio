@@ -40,19 +40,9 @@ export default function Home() {
 
       {/* Main content */}
       <div className="container px-4 mx-auto pt-20">
-        <section id="home" className="min-h-screen flex items-center">
+        <section id="home" className="flex items-center mt-40">
           <Hero />
         </section>
-
-        <div className="flex justify-center pb-20">
-          <a
-            href="#about"
-            className="animate-bounce rounded-full p-2 bg-primary/10 text-primary"
-            aria-label="Scroll to About section"
-          >
-            <ArrowDown size={24} />
-          </a>
-        </div>
 
         <section id="about" className="py-20">
           <About />
